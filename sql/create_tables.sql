@@ -1,0 +1,2 @@
+CREATE TABLE IF NOT EXISTS CRYPTO_ENTRIES (timestamp TIMESTAMPTZ, symbol TEXT, price NUMERIC, PRIMARY KEY (timestamp, symbol));
+CREATE TABLE IF NOT EXISTS CRYPTO_EXTREMES (symbol TEXT PRIMARY KEY, time_interval TEXT, old_price NUMERIC, new_price NUMERIC, min_price NUMERIC, max_price NUMERIC);
